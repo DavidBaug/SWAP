@@ -1,0 +1,12 @@
+Datos
+-------------
+
+Máquina 1
+user = ubuserver1
+pass = ubuserver1
+ip = 192.168.56.10
+
+Máquina 2
+user = ubuserver2
+pass = ubuserver2
+ip = 192.168.56.15
