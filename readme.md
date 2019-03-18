@@ -10,5 +10,5 @@ Curso 18-19 Universidad de Granada.
 
 ### Índice
 
-- #### [Creación de los servidores](P1/p1.md)
+- #### [Creación de los servidores](P1/README.md)
 
