@@ -57,3 +57,16 @@ Una vez hemos copiado la clave si nos vamos a la máquina destino y comprobamos 
 ![](./images/ssh_nopass.PNG)
 
 
+<div id='id4' />
+
+### Sincronización automática usando demonios
+
+Lo primero que debemos hacer es modificar nuestro archivo */etc/crontab* en la máquina 2 e indicaremos que queremos sincronizar el directorio */var/www/* de la máquina 1.
+
+![](./images/cron.PNG)
+
+Una vez hecho esto debemos reiniciar el servicio de cron mediante *sudo service cron restart* y debemos asegurarnos de que el usuario ubuserver2 tenga permisos de escritura en el directorio */var/www*. En caso de no tener debemos dárselos de la siguiente forma *sudo chmod oug+rw /var/www/*. Una vez hecho esto ya debería empezar a sincronizarse el directorio.
+
+![](./images/cron1.PNG)
+
+En mi caso he creado un directorio de prueba para comprobar que la sincronización y tras reiniciar cron he obtenido en la máquina 2 el contenido de la 1 de forma automática. Ahora este proceso se realizará automáticamente cada hora a los 25 minutos.
