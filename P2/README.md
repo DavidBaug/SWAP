@@ -1,4 +1,4 @@
-# Práctica 2: Clonar información entre servidores
+# Práctica 2: Sincronización entre servidores
 
 ## Índice
 
@@ -8,11 +8,7 @@
 
 3. #### [Gestión de claves para conexión ssh](#id3)
 
-4. #### [Estado servidor](#id4)
-
-5. #### [CURL](#id5)
-
-6. #### [SSH](#id6)
+4. #### [Sincronización automática usando cron](#id4)
 
 
 <div id='id1' />
@@ -59,7 +55,7 @@ Una vez hemos copiado la clave si nos vamos a la máquina destino y comprobamos 
 
 <div id='id4' />
 
-### Sincronización automática usando demonios
+### Sincronización automática usando cron
 
 Lo primero que debemos hacer es modificar nuestro archivo */etc/crontab* en la máquina 2 e indicaremos que queremos sincronizar el directorio */var/www/* de la máquina 1.
 

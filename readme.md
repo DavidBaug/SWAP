@@ -12,3 +12,5 @@ Curso 18-19 Universidad de Granada.
 
 - #### [Creación de los servidores](P1/README.md)
 
+- #### [Sincronización entre servidores](P2/README.md)
+
