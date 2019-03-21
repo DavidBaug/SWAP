@@ -10,7 +10,7 @@ Curso 18-19 Universidad de Granada.
 
 ### Índice
 
-- #### [Creación de los servidores](P1/README.md)
+- #### Práctica 1: [Creación de los servidores](P1/README.md)
 
-- #### [Sincronización entre servidores](P2/README.md)
+- #### Práctica 2: [Sincronización entre servidores](P2/README.md)
 
