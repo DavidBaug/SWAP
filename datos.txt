@@ -10,3 +10,8 @@ Máquina 2
 user = ubuserver1
 pass = ubuserver1
 ip = 192.168.56.15
+
+Balanceador
+user = ubuserver1
+pass = ubuserver1
+ip = 192.168.56.20
