@@ -32,3 +32,5 @@ Esto se debe a que estamos intentando instalar nginx mientras apache está activ
 Una vez instalado deberemos configurar el balanceador para hacer que la carga se reparta entre los servidores que tenemos activos. Para ello haremos uso de la directiva *upstream* para especifar la dirección de ambos servidores y crear un grupo sobre el que se repartirá la carga.
 
 Para modificar la configuración de nginx accederemos al fichero */et/nginx/conf.d/default.conf* y lo modificaremos de la siguiente forma.
+
+<http://xmodulo.com/how-to-uninstall-and-remove-apache2-on-ubuntu-debian.html>
