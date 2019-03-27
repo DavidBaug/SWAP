@@ -19,6 +19,8 @@
 
 ### Instalación nginx
 
+Para esta práctica habremos creado un balanceador de carga que nos permitirá distribuir la carga de trabajo entre los servidores de la granja. Para ello crearemos una máquina virtual en la que instalaremos el software para balancear.
+
 Lo primero que debemos hacer es actualizar el sistema para asegurar un mejor funcionamiento de la herramienta. Al intentar instalarlo puede que obtengamos este error.
 
 ![](./images/error_nginx.PNG)
