@@ -4,9 +4,9 @@
 
 1. #### [Instalación nginx](#id1)
 
-2. #### [Balanceo de carga](#id2)
+2. #### [Configuración](#id2)
 
-3. #### [Configuración](#id3)
+3. #### [Balanceo de carga](#id3)
 
 4. #### [Instalación haproxy](#id4)
 
@@ -29,7 +29,9 @@ Esto se debe a que estamos intentando instalar nginx mientras apache está activ
 
 ![](./images/arreglado_nginx.PNG)
 
+<div id='id2' />
 
+### Configuración
 
 Una vez instalado deberemos configurar el balanceador para hacer que la carga se reparta entre los servidores que tenemos activos. Para ello haremos uso de la directiva *upstream* para especifar la dirección de ambos servidores y crear un grupo sobre el que se repartirá la carga. Y después especificaremos las características del servidor.
 
@@ -39,7 +41,14 @@ Para modificar la configuración de nginx accederemos al fichero */et/nginx/conf
 
 
 
-Tras crear la configuración hacemos sudo *service nginx restart* para que se vuelva a iniciar con la configuración que acabamos de crear y al hacer *curl* a la dirección del balanceador deberíamos obtener lo siguiente:
+Tras crear la configuración hacemos sudo *service nginx restart* para que se vuelva a iniciar con la configuración que acabamos de crear y al hacer *curl* a la dirección del balanceador deberíamos obtener lo siguie3te.
+
+
+<div id='id3' />
+
+
+### Balanceo de carga
+
 
 ![](./images/nginx_funciona.PNG)
 
