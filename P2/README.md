@@ -2,18 +2,18 @@
 
 ## Índice
 
-1. #### [Ejecutar comandos remotamente](#id1)
+1. ### [Ejecutar comandos remotamente](#id1)
 
-2. #### [Sincronización de archivos con rsync](#id2)
+2. ### [Sincronización de archivos con rsync](#id2)
 
-3. #### [Gestión de claves para conexión ssh](#id3)
+3. ### [Gestión de claves para conexión ssh](#id3)
 
-4. #### [Sincronización automática usando cron](#id4)
+4. ### [Sincronización automática usando cron](#id4)
 
 
 <div id='id1' />
 
-### Ejecutar comandos remotamente
+## Ejecutar comandos remotamente
 
 En este primer apartado suponemos el caso de que un servidor no disponga de espacio en el disco local para crear un fichero *tar.gz*, para solucionar esto usaremos *ssh* para crear el fichero en el equipo destino.
 
@@ -29,7 +29,7 @@ Como podemos comprobar, al realizar la compresión y conectarnos a la segunda m�
 
 <div id='id2' />
 
-### Sincronización de archivos con rsync
+## Sincronización de archivos con rsync
 
 En el caso anterior hemos compartido un directorio que comprimimos, pero también podemos compartir directorios y mantener una sincronización, tal como hace Google Drive, Dropbox, Mega... etc. Para ello descargamos rsync y ejecutamos el siguiente comando. En él, especificamos la máquina y el usuario al que nos conectamos, la ruta del fichero o directorio que queremos sincronizar y el nombre que tendrá en nuestra máquina.
 
@@ -41,7 +41,7 @@ Para este caso creo otro directorio en la máquina 1 y ejecuto *rsync* desde la 
 
 <div id='id3' />
 
-### Gestión de claves para conexión ssh
+## Gestión de claves para conexión ssh
 
 Para agilizar la conexión entre máquinas podemos compartir las claves públicas para que así las máquinas se conozcan y puedan descifrar las peticiones automáticamente sin necesidad de introducir una contraseña. Para ello lo primero que hacemos es generar las claves pública y privada para cada máquina y copiarla a la máquina destino haciendo uso de *ssh-copy-id*. 
 
@@ -55,7 +55,7 @@ Una vez hemos copiado la clave si nos vamos a la máquina destino y comprobamos 
 
 <div id='id4' />
 
-### Sincronización automática usando cron
+## Sincronización automática usando cron
 
 Lo primero que debemos hacer es modificar nuestro archivo */etc/crontab* en la máquina 2 e indicaremos que queremos sincronizar el directorio */var/www/* de la máquina 1.
 
