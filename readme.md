@@ -14,3 +14,4 @@ Curso 18-19 Universidad de Granada.
 
 - #### Práctica 2: [Sincronización entre servidores](P2/README.md)
 
+- #### Práctica 3: [Balanceo de carga](P3/README.md)
