@@ -4,7 +4,7 @@
 
 1. ### [Instalación nginx](#id1)
 2. ### [Configuración](#id2)
-3. ### [Balanceo de carga](#id3)
+3. ### [Balanceo de carga nginx](#id3)
 4. ### [Instalación haproxy](#id4)
 5. ### [Configuración haproxy como balanceador](#id5)
 6. ### [Comprobación funcionamiento](#id6)
@@ -43,7 +43,7 @@ Tras crear la configuración hacemos sudo *service nginx restart* para que se vu
 <div id='id3' />
 
 
-## Balanceo de carga
+## Balanceo de carga nginx
 
 
 ![](./images/nginx_funciona.PNG)
@@ -54,4 +54,29 @@ Como se puede ver, al realizar una petición al balanceador este va distribuyend
 
 <div id='id4' />
 
-## Instalación haproxy
+## Instalación de haproxy
+
+Lo primero que haremos será parar los servicios de nginx para evitar errores con la instalación y configuración de haproxy. Ejecutamos *sudo service nginx stop* para detenerlos y a continuación procedemos a instalar haproyx.
+
+
+<div id='id5' />
+
+## Configuración de haproxy
+
+
+Una vez instalado deberemos modificar los archivos de configuración para que funcione con nuestras máquinas. Accederemos a */etc/haproxy/haproxy.cfg* para modificar la configuración por defecto.
+
+![](./images/haproxy_conf.PNG)
+
+
+## Comprobación funcionamiento
+
+Estando ya configurado el balanceador reiniciaremos el proceso y lo cargaremos con la configuración que hemos creado mediante el uso del siguiente comando *sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg* y obtenemos lo siguiente.
+
+![](./images/haproxy_restart.PNG)
+
+Podemos ver que aparecen unos warnings que nos indican que algunas directivas que hemos usado en la configuración están obsoletas y no será compatible en futuras versiones. Como tan sólo queremos comprobar el funcionamiento del balanceador ignoraremos estas advertencias, aunque un buen administrador debería actualizar la configuración para evitar que el sistema fallara en un futuro.
+
+![](./images/haproxy_funciona.PNG)
+
+Al acceder al servidor desde el host podemos comprobar que la configuración de haproxy ha sido un éxito y balancea la carga perfectamente.
