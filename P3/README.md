@@ -112,7 +112,7 @@ En la ejecución del *benchmark* usando como balanceador *Haproxy* y lanzando **
 
 ![](./images/alta_carga_nginx1.PNG)
 
-Ejecutando el mismo *benchmark* y usando como balanceador *Nginx* **, se ha resuelto en **2 minutos y 21 segundos. En este caso vemos que el número de peticiones por segundo no presenta tantos dientes de sierra, y respecto al tiempo de respuesta medio se puede apreciar que alcanza un máximo, lo cual en conjunto, hace que *Nginx* sea más apropiado para nuestro sistema como balanceador de carga, pero esto no quiere decir que *Nginx* siempre sea mejor.
+Ejecutando el mismo *benchmark* y usando como balanceador *Nginx* , se ha resuelto en **2 minutos y 21 segundos**. En este caso vemos que el número de peticiones por segundo no presenta tantos dientes de sierra, y respecto al tiempo de respuesta medio se puede apreciar que alcanza un máximo, lo cual en conjunto, hace que *Nginx* sea más apropiado para nuestro sistema como balanceador de carga, pero esto no quiere decir que *Nginx* siempre sea mejor.
 
 
 
