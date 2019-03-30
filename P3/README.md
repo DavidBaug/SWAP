@@ -69,6 +69,7 @@ Una vez instalado deberemos modificar los archivos de configuración para que fu
 ![](./images/haproxy_conf.PNG)
 
 <div id='id6' />
+
 ## Comprobación funcionamiento
 
 Estando ya configurado el balanceador reiniciaremos el proceso y lo cargaremos con la configuración que hemos creado mediante el uso del siguiente comando *sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg* y obtenemos lo siguiente.
@@ -83,6 +84,7 @@ Al acceder al servidor desde el host podemos comprobar que la configuración de 
 
 
 <div id='id7' />
+
 ## Ejemplo de balanceo con alta carga
 
 Para comprobar como reaccionará nuestra granja ante una gran carga de trabajo usaré el siguiente benchmark en mi host: [SuperBenchmarker](https://github.com/aliostad/SuperBenchmarker)
@@ -93,7 +95,7 @@ Para testear el funcionamiento he modificado el *index.html* de ambos servidores
 
 
 
-###### Haproxy
+##### Haproxy
 
 ![](./images/alta_carga_haproxy.PNG)
 
@@ -105,7 +107,7 @@ En la ejecución del *benchmark* usando como balanceador *Haproxy* y lanzando **
 
 
 
-###### Nginx
+##### Nginx
 
 
 ![](./images/alta_carga_nginx.PNG)
