@@ -86,3 +86,34 @@ Al acceder al servidor desde el host podemos comprobar que la configuración de 
 ## Ejemplo de balanceo con alta carga
 
 Para comprobar como reaccionará nuestra granja ante una gran carga de trabajo usaré el siguiente benchmark en mi host: [SuperBenchmarker](https://github.com/aliostad/SuperBenchmarker)
+
+Una vez instalado podemos hacer peticiones mediante el comando *sb -u "http://ejemplo.com"*
+
+Para testear el funcionamiento he modificado el *index.html* de ambos servidores y he introducido unas pocas imágenes para que la web sea un poco más grande. Antes de mostrar los resultados del test he de decir que al realizarlos desde el host y tener corriendo 3 máquinas virtuales los resultados que obtenemos no son fiables, ya que se están compartiendo recursos, pero como tan sólo es una prueba para clase podremos analizar los resultados y ver cómo afecta el uso de distintos servidores.
+
+
+
+###### Haproxy
+
+![](./images/alta_carga_haproxy.PNG)
+
+![](./images/alta_carga_haproxy1.PNG)
+
+
+
+En la ejecución del *benchmark* usando como balanceador *Haproxy* y lanzando **100.000 peticiones**, se ha resuelto en **2 minutos y 32 segundos**, y como podemos ver en la gráfica tenemos varios picos en el número de peticiones por segundo (**RPS**, *Requests per Second*). Esto también implica que el tiempo de respuesta medio por petición también será un poco más inestable.
+
+
+
+###### Nginx
+
+
+![](./images/alta_carga_nginx.PNG)
+
+![](./images/alta_carga_nginx1.PNG)
+
+Ejecutando el mismo *benchmark* y usando como balanceador *Nginx* **, se ha resuelto en **2 minutos y 21 segundos. En este caso vemos que el número de peticiones por segundo no presenta tantos dientes de sierra, y respecto al tiempo de respuesta medio se puede apreciar que alcanza un máximo, lo cual en conjunto, hace que *Nginx* sea más apropiado para nuestro sistema como balanceador de carga, pero esto no quiere decir que *Nginx* siempre sea mejor.
+
+
+
+En conclusión, al establecer una granja web se debe testear con distintos balanceadores y configuraciones para intentar optimizar el funcionamiento de la misma. En nuestro caso, usando *Nginx* y *Round Robin* con un peso equivalente entre nuestras dos máquinas finales obtenemos un buen resultado.
