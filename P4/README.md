@@ -50,8 +50,20 @@ Al guardar la configuración y reiniciar *nginx* deberíamos ser capaces de ver 
 Ahora podemos establecer una conexión segura con cualquier máquina, incluso el balanceador, y este sigue teniendo su comportamiento habitual, nos permite distribuir la carga de trabajo entre las máquinas finales.
 
 
+<div id='id2' />
+
+## Configuración del cortafuegos
+
+El cortafuegos es el intermediario que hay entre las comunicaciones entre cliente y servidor. Es el encargado de "decidir" las peticiones que acepta y pasa al servidor, lo que nos permite evitar ataques que puedan perjudicar nuestra granja web.
+
+Para esta práctica usaremos *iptables* para crear las reglas del cortafuegos. Crearemos un script para que se lance al iniciar la máquina con las reglas que hemos establecido.
 
 
 
+![](./images/cortafuegos1.PNG)
 
+Para mantener esta configuración debemos hacer que el script se ejecute cada vez que encendemos la máquina, para ello modificaremos el *crontab* añadiendo una regla para ejecutar el script.
 
+![](./images/cortafuegos2.PNG)
+
+Ahora reiniciaremos la máquina y comprobaremos si podemos hacer peticiones al servidor.
