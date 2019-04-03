@@ -66,4 +66,11 @@ Para mantener esta configuración debemos hacer que el script se ejecute cada ve
 
 ![](./images/cortafuegos2.PNG)
 
-Ahora reiniciaremos la máquina y comprobaremos si podemos hacer peticiones al servidor.
+Ahora reiniciaremos la máquina y comprobaremos los puertos para ver si la configuración de *iptables* ha sido correcta.
+
+![](./images/cortafuegos3.PNG)
+
+Como podemos ver, los puertos 80 y 443 están disponibles, por lo que ahora al realizar peticiones HTTP o HTTPS deberíamos obtener respuesta por parte del servidor.
+
+![](./images/cortafuegos4.PNG)
+
