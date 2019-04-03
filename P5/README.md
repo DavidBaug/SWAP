@@ -7,3 +7,10 @@
 2. ### [Replicar una BD MySQL con mysqldump](#id2)
 
 3. ### [Replicación de BD mediante una configuración maestro-esclavo](#id3)
+
+
+## Crear una base de datos e insertar datos
+
+## Replicar una BD MySQL con mysqldump
+
+## Replicación de BD mediante una configuración maestro-esclavo
