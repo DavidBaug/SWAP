@@ -27,4 +27,4 @@ asdasd
 
 ## Replicación de BD mediante una configuración maestro-esclavo
 
-asdads
+asdadsa
