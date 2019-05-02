@@ -1,3 +1,21 @@
+Cloud Computing
+
+
+
+Qué es
+
+
+
+Usuario
+
+
+
+Límites
+
+
+
+
+
 ### Introducción
 
 Internet surge debido a la necesidad de compartir información de una forma distinta a la convencional. Gracias a esto se crea una red que permite conectar distintos puntos y realizar un intercambio de información, lo que combinado con el uso de servidores hace que cualquier usuario pueda recibir un servicio siempre que esté conectado a la red.
@@ -12,4 +30,4 @@ Con Javascript podemos ejecutar aplicaciones en el navegador, lo que en el caso 
 
 ### Javascript
 
-La creación de un lenguaje que interprete el navegador nos permite exportar las aplicaciones a cualquier dispositivo que disponga de un navegador capaz de ejecutar dicho código. Esto hace que el proceso de implementación sea más ameno, y que no haya que tener distintas aplicaciones para cada sistema operativo o arquitectura.
+La creación de un lenguaje que interprete el navegador nos permite exportar las aplicaciones a cualquier dispositivo que disponga de un navegador capaz de ejecutar dicho código. Con su nacimiento, varios desarrolladores ven su potencial por lo que comienzan a importar sus aplicaciones a la web usando usando una modificación del lenguaje. Para evitar la incompatibilidad, el W3C (World Wide Web Consortium), diseña el estándar DOM (Document Object Model) con el que las partes de un documento HTML son objetos a los que JS puede acceder.  
