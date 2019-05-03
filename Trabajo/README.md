@@ -62,13 +62,13 @@ Proveedores de este servicio son Amazon Elastic Computer Cloud (EC2), Microsoft 
 
 ## Servicios en la nube
 
-#### En el lado del servidor
+### En el lado del servidor
 
 Como hemos visto en esta asignatura, el tener un servicio alojado en la web nos permite escalar el sistema para poder ofrecer el servicio a más usuarios al mismo tiempo, ofrecer una respuesta más rápida ante un proceso pesado de cálculo, mayor capacidad de almacenamiento... etc.
 
 Para el desarrollo de estas aplicaciones en el ámbito del servidor el lenguaje más utilizado es PHP, con casi un 80% de uso. Al desarrollar aplicaciones en el servidor, el programa actúa como una caja negra para el cliente, ya que a partir de una entrada de datos obtiene una salida, sin saber lo que se ha hecho por dentro. El hecho de programar aplicaciones en el servidor nos permite ofrecer una respuesta más rápida y no revelar nuestro código.
 
-#### En el lado del cliente
+### En el lado del cliente
 
 A pesar de que ejecutar una aplicación en la nube suela ser más rápido que ejecutar una aplicación en el sistema del usuario, la comunicación entre cliente y servidor está acotada por la latencia de red, lo que puede llegar a hacer que el diálogo con el servidor y la respuesta que ofrece sea más lenta que lo que se tardaría al ejecutar la aplicación en el cliente.
 
@@ -91,7 +91,7 @@ Para tratar el tema escogeré varias aplicaciones que podemos encontrar tanto en
 
 
 
-##### Base de datos
+### Base de datos
 
 ¿Qué debemos pensar a la hora de decidir si ejecutar una Base de Datos en la nube o en el cliente? Almacenamiento principalmente, y no sólo secundario.
 
@@ -105,7 +105,7 @@ Contratando un servicio en la nube no sólo aseguramos que la aplicación siempr
 
 
 
-##### Suite de ofimática
+### Suite de ofimática
 
 Cuando tratamos con una suite de ofimática lo principal que buscamos es poder escribir y hacer nuestros cálculos de forma rápida y eficiente. En el caso de un usuario promedio, que escribe algún documento de texto, hace alguna tabla con una hoja de cálculo, o crea una presentación, no es necesario reservar 50 núcleos y 100GB de RAM para el proceso.
 
@@ -113,7 +113,7 @@ Es por esto que proveedores como Google o incluso Microsoft están llevando sus 
 
 
 
-##### Servicio de streaming de música
+Servicio de streaming de música
 
 En este caso, cuando hablamos de streaming de música o cualquier otro medio audiovisual sí que priorizamos el almacenamiento secundario, ya que lo que nos permiten las plataformas es acceder a un amplísimo catálogo que en condiciones normales no podríamos almacenar en el sistema del usuario.
 
@@ -121,13 +121,13 @@ Dados los avances de la tecnología ahora somos capaces de descargar una canció
 
 
 
-##### Entrenar redes neuronales
+### Entrenar redes neuronales
 
 Al entrenar una red neuronal requerimos de tiempo de sobra para ejecutar el proceso o de una cantidad brutal de proceso de cálculo, ya que lo que buscamos resolver problemas y podemos optar por invertir en potencia o esperar un poco más para obtener el resultado.
 
 
 
-##### Videojuegos
+### Videojuegos
 
 Vaya, vaya, vaya... Cuando hablamos de videojuegos podemos hablar tanto del Candy Crush como del ultimísimo juego de cualquier compañía enorme para el que necesites 16GB de memoria de vídeo y un procesador con 32 núcleos a 6GHz cada uno.
 
