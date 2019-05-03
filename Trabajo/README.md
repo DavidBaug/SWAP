@@ -179,7 +179,9 @@ Al ejecutarla en local y generar el mapa tarda 64 segundos en completar la creac
 
 Al ejecutarla en local y generar el mapa tarda 61 segundos en completar la creación y comenzar a cargarlo. Al cargar el mapa y comenzar a movernos por él podemos ver que la ejecución es rápida, aunque da una apariencia de lentitud debido a la latencia de red. Al cambiar los ajustes de vídeo y colocarlos al máximo vemos que no varía la ejecución y sigue ejecutándose de forma fluida.
 
+<figure>
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/D548evhA_vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</figure>
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/6YHY8mZjEBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
