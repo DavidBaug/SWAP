@@ -164,10 +164,10 @@ Para comenzar he usado como ejemplo Minecraft, una aplicación programada en Jav
 
 Al ejecutarla en local y generar el mapa tarda 64 segundos en completar la creación y comenzar a cargarlo. Una vez comenzamos a movernos por el mapa podemos ver que el juego da algunos tirones, y más aún cuando cambiamos la distancia de renderizado y la ponemos al máximo. Aunque también influye que estemos usando los propios recursos del sistema para grabar la pantalla.
 
-[![Creación mapa](http://img.youtube.com/vi/3AQ3dDndqh4/0.jpg)](https://www.youtube.com/embed/3AQ3dDndqh4)
 
-[![Ejecución](http://img.youtube.com/vi/GGJ0VDHMK3M/0.jpg)](https://www.youtube.com/embed/GGJ0VDHMK3M)
+[![Creación mapa](http://img.youtube.com/vi/GGJ0VDHMK3M/0.jpg)](https://www.youtube.com/embed/GGJ0VDHMK3M)
 
+[![Ejecución](http://img.youtube.com/vi/3AQ3dDndqh4/0.jpg)](https://www.youtube.com/embed/3AQ3dDndqh4)
 
 
 
