@@ -1,12 +1,40 @@
 # Cloud Computing
 
+## Índice
 
+- ##### [Qué es](#id1)
+
+- ##### [Arquitectura de servicios](#id2)
+
+- ##### [Servicios en la nube](#id3)
+
+  - ###### En el lado del servidor
+
+  - ###### En el lado del cliente
+
+- ##### [Análisis de aplicaciones](#id4)
+
+  - ###### Base de datos
+
+  - ###### Suite de ofimática
+
+  - ###### Servicio de streaming de música
+
+  - ###### Redes neuronales
+
+  - ###### Videojuegos
+
+- ##### [UWU](#id5)
+
+<div id='id1' />
 
 ## Qué es
 
 Cloud Computing es un paradigma que permite ofrecer servicios de computación a través de una red, que normalmente suele ser internet. Dicho paradigma surge por la necesidad de compartir los recursos de un sistema (ofrecer servicios) entre distintos usuarios concurrentemente.  Con el avance de la tecnología este paradigma se ha vuelto indispensable para el uso cotidiano de cualquier persona, ya que la inmensa mayoría de las empresas ofrece sus servicios en la nube. 
 
 ![NUBE](./imagenes/cloud.png)
+
+<div id='id2' />
 
 ## Arquitectura de servicios
 
@@ -30,6 +58,8 @@ Proveedores de este servicio son Amazon Elastic Computer Cloud (EC2), Microsoft 
 
 ![NUBE](./imagenes/piramide.png)
 
+<div id='id3' />
+
 ## Servicios en la nube
 
 #### En el lado del servidor
@@ -51,6 +81,7 @@ Con el nacimiento de Javascript, varios desarrolladores ven su potencial y comie
 Desde que surgió Javascript se han creado varios lenguajes de programación web, aunque a día de hoy se ha convertido en uno de los más populares y usados por distintos desarrolladores.
 
 
+<div id='id4' />
 
 ## Análisis de aplicaciones
 
