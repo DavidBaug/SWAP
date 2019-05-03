@@ -141,6 +141,16 @@ Al tratar este tema no podemos escoger solo una opción. Podemos ejecutar juegos
 
 
 
+## Comparación rendimiento
+
+### Local
+
+
+
+### Cloud
+
+
+
 
 
 #### Bibliografía
@@ -152,4 +162,3 @@ Al tratar este tema no podemos escoger solo una opción. Podemos ejecutar juegos
 
 
 <https://www.youtube.com/watch?v=bGNBnPSNa8c>
-
