@@ -143,11 +143,51 @@ Al tratar este tema no podemos escoger solo una opción. Podemos ejecutar juegos
 
 ## Comparación rendimiento
 
+Para comparar el rendimiento entre las aplicaciones usaré los distintos equipos:
+
+- Local: 
+  - CPU - Intel Core i5 6300HQ
+  - 16 GB RAM
+  - NVIDIA GEFORCE GTX 950m 2 GB VRAM
+  - HDD 1TB 5400 RPM SATA 3.0Gbps
+- Cloud: 
+  - CPU - Intel Xeon E5-2690 v4 2.60GHz
+  - 56 GB RAM
+  - NVIDIA Tesla M60 8 GB VRAM
+  - HDD 380 GB 500 MiB/s
+
+
+
+Para comenzar he usado como ejemplo Minecraft, una aplicación programada en Java que no está muy bien optimizada.
+
 ### Local
+
+Al ejecutarla en local y generar el mapa tarda 64 segundos en completar la creación y comenzar a cargarlo. Una vez comenzamos a movernos por el mapa podemos ver que el juego da algunos tirones, y más aún cuando cambiamos la distancia de renderizado y la ponemos al máximo. Aunque también influye que estemos usando los propios recursos del sistema para grabar la pantalla.
+
+
+<figure class="video_container">
+
+<iframe width="1280" height="723" src="https://www.youtube.com/embed/3AQ3dDndqh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="1280" height="723" src="https://www.youtube.com/embed/GGJ0VDHMK3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 
 ### Cloud
+
+Al ejecutarla en local y generar el mapa tarda 61 segundos en completar la creación y comenzar a cargarlo. Al cargar el mapa y comenzar a movernos por él podemos ver que la ejecución es rápida, aunque da una apariencia de lentitud debido a la latencia de red. Al cambiar los ajustes de vídeo y colocarlos al máximo vemos que no varía la ejecución y sigue ejecutándose de forma fluida.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/D548evhA_vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/6YHY8mZjEBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+
 
 
 
