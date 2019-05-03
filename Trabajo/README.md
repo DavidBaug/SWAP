@@ -156,3 +156,15 @@ Dadas las capacidades de las granjas web, siempre será mejor que en caso de que
 Con Javascript podemos ejecutar aplicaciones en el navegador, lo que en el caso de aplicaciones simples, como las de ofimática, podamos obtener un rendimiento similar al de una aplicación nativa. 
 
 
+
+
+
+
+
+
+
+<https://flickstiq.com/2018/04/microsoft-azure-cloud-gaming-tutorial/>
+
+
+
+<https://www.youtube.com/watch?v=bGNBnPSNa8c>
