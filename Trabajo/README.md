@@ -113,17 +113,27 @@ Es por esto que proveedores como Google o incluso Microsoft están llevando sus 
 
 
 
-Servicio de streaming de música
+### Servicio de streaming multimedia
 
-En este caso, cuando hablamos de streaming de música o cualquier otro medio audiovisual sí que priorizamos el almacenamiento secundario, ya que lo que nos permiten las plataformas es acceder a un amplísimo catálogo que en condiciones normales no podríamos almacenar en el sistema del usuario.
+En este caso, cuando hablamos de streaming de música, vídeo, imágenes... sí que priorizamos el almacenamiento secundario, ya que lo que nos permiten las plataformas es acceder a un amplísimo catálogo que en condiciones normales no podríamos almacenar en el sistema del usuario.
 
-Dados los avances de la tecnología ahora somos capaces de descargar una canción en muy pocos segundos, por lo que ocupar almacenamiento guardando este tipo de archivos suele ser absurdo. 
+Dados los avances de la tecnología ahora somos capaces de descargar cualquier medio en muy pocos segundos, por lo que ocupar almacenamiento guardando este tipo de archivos suele ser absurdo y el tiempo media de respuesta mientras se manda la petición y comenzamos a disfrutar del contenido multimedia es prácticamente despreciable.
+
+Los servicios de streaming te permiten acceder a un catálogo más grande del que podrías almacenar desde cualquier dispositivo con conexión a la red al contrario que con los servicios locales mediante los que tendrías que ir traspasando los archivos entre todos tus dispositivos para poder replicar lo mismo que te ofrece un servicio de streaming. En este tema, el uso de los servicios en la nube otorgan una mejor experiencia de usuario.
 
 
 
-### Entrenar redes neuronales
+### Tareas de computación e inteligencia artificial
 
-Al entrenar una red neuronal requerimos de tiempo de sobra para ejecutar el proceso o de una cantidad brutal de proceso de cálculo, ya que lo que buscamos resolver problemas y podemos optar por invertir en potencia o esperar un poco más para obtener el resultado.
+Buscando resolver problemas de *big data* o *machine learning* lo primero que pensamos es que necesitamos una gran cantidad de potencia de cálculo para poder resolver esos problemas en un tiempo razonable, por lo que sin dudar optaremos por el *cloud computing*. 
+
+Pero... ¿Supone tal mejora ejecutar nuestros programas en un servidor remoto sabiendo que los últimos procesadores comienzan a añadir unidades que permiten un cálculo específico de estos problemas? Pues depende, al igual que con la base de datos de una frutería, hay problemas de inteligencia artificial que no requieren de una gran capacidad, si no que con una máquina ordinaria podemos obtener buenos resultados en un tiempo razonable.
+
+Aquí entra en juego otra vez el avance de la tecnología y cómo en los últimos dispositivos se están incluyendo más unidades especializadas a la resolución de un problema concreto, al igual que pasó varios años atrás con la inclusión de procesadores especializados en un tipo de cálculo concreto, como el cálculo de números en coma flotante y las FPUs (Floating-Point Unit). 
+
+Un ámbito en el que podemos ver cómo se ha desarrollado este concepto es el mundo de los videojuegos, en el que gracias a la inteligencia artificial y la mejora en prestaciones de los sistemas para resolver estos problemas hemos pasado de NPCs que se comían las paredes a otros que sigilosamente te apuñalan por la espalda sin que te enteres. Aunque no es lo mismo conseguir que un personaje reaccione de una forma más inteligente que conseguir entrenar una red neuronal con un conjunto inmenso de datos. 
+
+Cuando tratamos temas de computación pesada siempre será mejor ejecutar los programas en la nube, ya que para la ejecución de programas que tardan horas podemos sacrificar medio minuto de latencia mientras establecemos respuesta con el servidor antes que esperar el doble y ejecutar esos mismos programas en local.
 
 
 
@@ -146,12 +156,12 @@ Al tratar este tema no podemos escoger solo una opción. Podemos ejecutar juegos
 Para comparar el rendimiento entre las aplicaciones usaré los distintos equipos:
 
 - Local: 
-  - CPU - Intel Core i5 6300HQ
+  - CPU - Intel Core i5 6300HQ 4 Cores
   - 16 GB RAM
   - NVIDIA GEFORCE GTX 950m 2 GB VRAM
   - HDD 1TB 5400 RPM SATA 3.0Gbps
 - Cloud: 
-  - CPU - Intel Xeon E5-2690 v4 2.60GHz
+  - CPU - Intel Xeon E5-2690 v4 2.60GHz 6 Cores
   - 56 GB RAM
   - NVIDIA Tesla M60 8 GB VRAM
   - HDD 380 GB 500 MiB/s
@@ -160,7 +170,9 @@ Para comparar el rendimiento entre las aplicaciones usaré los distintos equipos
 
 Para comenzar he usado como ejemplo Minecraft, una aplicación programada en Java que no está muy bien optimizada.
 
-### Local
+### Videojuegos
+
+#### Local
 
 Al ejecutarla en local y generar el mapa tarda 64 segundos en completar la creación y comenzar a cargarlo. Una vez comenzamos a movernos por el mapa podemos ver que el juego da algunos tirones, y más aún cuando cambiamos la distancia de renderizado y la ponemos al máximo. Aunque también influye que estemos usando los propios recursos del sistema para grabar la pantalla.
 
@@ -171,15 +183,51 @@ Al ejecutarla en local y generar el mapa tarda 64 segundos en completar la creac
 
 
 
-### Cloud
+#### Cloud
 
 Al ejecutarla en local y generar el mapa tarda 61 segundos en completar la creación y comenzar a cargarlo. Al cargar el mapa y comenzar a movernos por él podemos ver que la ejecución es rápida, aunque da una apariencia de lentitud debido a la latencia de red. Al cambiar los ajustes de vídeo y colocarlos al máximo vemos que no varía la ejecución y sigue ejecutándose de forma fluida.
 
 [![Creación mapa](http://img.youtube.com/vi/D548evhA_vM/0.jpg)](https://www.youtube.com/embed/D548evhA_vM)
 
+
+
 [![Ejecución](http://img.youtube.com/vi/6YHY8mZjEBE/0.jpg)](https://www.youtube.com/embed/6YHY8mZjEBE)
 
 
+
+
+
+### Aprendizaje Automático
+
+Dado que esta prueba no ha resultado muy distintiva probaré también a resolver un problema de aprendizaje automático usando Jupyter Notebook en mi máquina y Spyder en le máquina remota. Jupyter Notebook es una herramienta basada en web que usa los recursos del sistema, mientras que Spyder es una aplicación nativa del sistema.
+
+
+
+#### Local
+
+Para esta prueba he decidido por ejecutar la resolución de un problema mediante Regresión Logística y un Gradiente Descendente Estocástico, ambos algoritmos son iterativos y son testeados con varios parámetros para escoger el que mejor solución otorgue.
+
+Al ejecutarlos en mi máquina he obtenido los siguientes resultados.
+
+
+
+![](./imagenes/lr_local.PNG)
+
+
+
+![](./imagenes/sgd_local.PNG)
+
+Usando regresión obtenemos un tiempo de ejecución de casi **103 segundos** para un máximo de 50 iteraciones, y en el caso del gradiente descendente obtenemos un tiempo de ejecución de **41 segundos** para el mismo número de iteraciones.
+
+#### Cloud
+
+Ahora vamos a proceder a ejecutar el mismo programa en el IDE de desarrollo Sypder, y podemos estimar que obtendremos un mejor resultado debido a que esta máquina cuenta con más potencia de cómputo.
+
+![](./imagenes/lr_cloud.PNG)
+
+![](./imagenes/sgd_cloud.PNG)
+
+Para los mismos algoritmos de antes obtenemos ahora un total de tiempo de ejecución de **85 segundos** para regresión logística y **35 segundos** para el caso de gradiente descendente.
 
 
 
