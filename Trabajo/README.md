@@ -76,6 +76,8 @@ Como hemos visto en esta asignatura, el tener un servicio alojado en la web nos 
 
 Para el desarrollo de estas aplicaciones en el ámbito del servidor el lenguaje más utilizado es PHP, con casi un 80% de uso. Al desarrollar aplicaciones en el servidor, el programa actúa como una caja negra para el cliente, ya que a partir de una entrada de datos obtiene una salida, sin saber lo que se ha hecho por dentro. El hecho de programar aplicaciones en el servidor nos permite ofrecer una respuesta más rápida y no revelar nuestro código.
 
+![](./imagenes/server_side.png)
+
 ### En el lado del cliente
 
 A pesar de que ejecutar una aplicación en la nube suela ser más rápido que ejecutar una aplicación en el sistema del usuario, la comunicación entre cliente y servidor está acotada por la latencia de red, lo que puede llegar a hacer que el diálogo con el servidor y la respuesta que ofrece sea más lenta que lo que se tardaría al ejecutar la aplicación en el cliente.
@@ -88,6 +90,7 @@ Con el nacimiento de Javascript, varios desarrolladores ven su potencial y comie
 
 Desde que surgió Javascript se han creado varios lenguajes de programación web, aunque a día de hoy se ha convertido en uno de los más populares y usados por distintos desarrolladores.
 
+![](./imagenes/client_side.png)
 
 <div id='id4' />
 
