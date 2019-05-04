@@ -18,13 +18,21 @@
 
   - ###### Suite de ofimática
 
-  - ###### Servicio de streaming de música
+  - ###### Servicio de streaming multimedia
 
-  - ###### Redes neuronales
+  - ###### Tareas de computación e inteligencia artificial
 
   - ###### Videojuegos
 
-- ##### [UWU](#id5)
+- ##### [Comparación de rendimiento](#id5)
+
+  - ###### Videojuegos
+
+  - ###### Aprendizaje automático
+
+- ##### [Conclusión](#id6)
+
+- ##### [Bibliografía](#id7)
 
 <div id='id1' />
 
@@ -150,6 +158,7 @@ Pero además de mejorar la tecnología también se mejora el software, por lo qu
 Al tratar este tema no podemos escoger solo una opción. Podemos ejecutar juegos en remoto, sabiendo que el cuello de botella reside en la latencia de red, y podemos ejecutar juegos no tan potentes desde el navegador usando los recursos del cliente. 
 
 
+<div id='id5' />
 
 ## Comparación rendimiento
 
@@ -230,13 +239,23 @@ Ahora vamos a proceder a ejecutar el mismo programa en el IDE de desarrollo Sypd
 Para los mismos algoritmos de antes obtenemos ahora un total de tiempo de ejecución de **85 segundos** para regresión logística y **35 segundos** para el caso de gradiente descendente.
 
 
+<div id='id6' />
 
-#### Bibliografía
+## Conclusión
+
+Hemos visto con distintos ejemplos que el *cloud computing* es un paradigma que ofrece muchas mejoras frente a la  computación en local, y cuando digo computación en local me refiero a lo típico de instalar tu sistema operativo y herramientas favoritas,  aunque no por ello en un futuro será lo único que se utilice. Lo que sí que se utilizará y será un estándar será la web, ya que gracias a unificar todo en un mismo sitio los desarrolladores podrán exportar sus productos a más usuarios sin necesidad de implementar varias versiones dependiendo de la arquitectura. 
+
+En mi opinión creo que la programación web va a ir sustituyendo a la programación típica, y que combinada con el *cloud computing* con el paso del tiempo proporcionará una mejor experiencia de usuario que la actual, permitiendo mejor la eficiencia, eficacia e incluso reduciendo los costes.
 
 
+<div id='id7' />
+
+
+## Bibliografía
 
 <https://flickstiq.com/2018/04/microsoft-azure-cloud-gaming-tutorial/>
 
-
-
 <https://www.youtube.com/watch?v=bGNBnPSNa8c>
+
+<https://medium.com/@FedakV/what-is-the-cloud-pyramid-the-layers-of-devops-services-730ac137e8b8>
+
