@@ -55,9 +55,9 @@ Tras hacer esto podemos entrar y comprobar que efectivamente los datos se han co
 
 
 
+<div id='id3'/>
 
 ## Replicación de BD mediante una configuración maestro-esclavo
-
 
 
 Modificamos la configuración de MySQL para añadir las opciones para guardar el log y el bin, y para identificar a nuestro servidor.
