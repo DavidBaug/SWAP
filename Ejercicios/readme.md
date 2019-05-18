@@ -172,3 +172,17 @@ Los sistemas de ficheros en red o NFS (Network File System) es un mecanismo que 
 
 Para ello se hace uso de un servidor que será el que almacene los datos, y serán los clientes los que operen con ellos.
 
+Las versiones de NFS más importantes son NFSv2 (RFC 1094), NFSv3 (RFC 1813) y NFSv4 (RFC 3530).
+
+- **Ventajas NFS** 
+  - Reducen el riesgo de que el fallo de un solo equipo impida acceder a los datos.
+    Proporcionan ubicaciones centralizadas para los datos que deben o deberían estar compartidas entre todos los usuarios.
+  - Simplifican el acceso a los datos existentes en sistemas más veloces.
+  - Proporcionan la oportunidad de centralizar operaciones administrativas, tales como la copia de seguridad de los datos (back-ups).
+  - Proporcionan interoperabilidad y flexibilidad. Normalmente se puede acceder a sistemas de ficheros en red desde ordenadores que ejecuten Linux, Windows, Mac OS X, BeOS, BSD, y muchos otros. De esta forma es fácil utilizar el hardware y software más adecuado a los requerimientos de escritorio, y aun así acceder a los mismos datos del entorno de sistema de ficheros en red.
+- **Desventajas NFS**
+  - NFSv2 y NFSv3 pueden utilizar UDP como protocolo de transporte que al ser una conexión desatendida, minimiza el tráfico de red, pero si el servidor NFS cayera por cualquier circunstancia, los clientes NFS seguirían enviando peticiones al servidor produciendo el efecto contrario, que es la saturación de la red.
+  - Las versiones 2 y 3 de NFS permiten controlar la exportación y montaje de sistemas de archivos en función del equipo que hace la solicitud, pero no del usuario. Es decir no se contempla un control de acceso al sistema de archivos por usuario. Solo para los equipos. Esto implica que si un sistema de archivos es exportado desde el servidor NFS, cualquier usuario de un equipo remoto cliente NFS podría acceder a él.
+  - NFS sufre algunos problemas de rendimiento debido a su diseño “sin estado” (parte de estos problemas son mitigados en las últimas versiones de NFS). En particular, como el cliente asume que una operación de escritura se completa una vez que recibe el acuse de recibo del servidor, el servidor debe asegurarse de escribir cada bloque a disco antes de responder, para evitar discrepancias en el caso de una caída. Esto introduce un retardo significativo en el caso de escrituras NFS.
+
+Por ejemplo en la red de la universidad, los datos se mantienen en varios servidores y el personal de administración y servicios opera con esa información remotamente, sin mantener una copia física en local.
