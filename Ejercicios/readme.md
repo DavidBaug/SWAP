@@ -153,3 +153,22 @@ En Windows Server podemos encontrar los siguientes:
 - **Cacti:** Es una interfaz completa para RRDTool, almacena toda la información necesaria para crear gráficos y rellenarlos con datos en una base de datos MySQL.
 - **Zabbix:**  Es una herramienta a gran escala para la supervisión de redes y sistemas que combina varias funciones en una consola web. Puede configurarse para monitorear y recopilar datos de una amplia variedad de servidores y dispositivos de red, y proporciona un servicio y monitoreo de rendimiento de cada objeto. Zabbix permite monitorear servidores y redes con una amplia gama de herramientas, incluido el monitoreo de hipervisores de virtualización y pilas de aplicaciones web.
 
+
+
+## Tema 7
+
+#### Ejercicio 1: Buscar información sobre los sistemas de ficheros en red más utilizados en la actualidad y comparar sus características. Hacer una lista de ventajas e inconvenientes de todos ellos, así como grandes sistemas en los que se utilicen.
+
+El Network File System (Sistema de archivos de red), o NFS, es un protocolo de nivel de aplicación, 
+según el Modelo OSI. Es utilizado para sistemas de archivos distribuido en un entorno de red de 
+computadoras de área local. Posibilita que distintos sistemas conectados a una misma red accedan 
+a ficheros remotos como si se tratara de locales. Originalmente fue desarrollado con el objetivo de 
+que sea independiente de la máquina, el sistema operativo y el protocolo de transporte, esto fue 
+posible gracias a que está implementado sobre los protocolos XDR (presentación) y ONC RPC.
+
+
+
+Los sistemas de ficheros en red o NFS (Network File System) es un mecanismo que encontramos en la capa de aplicación del modelo OSI y que nos permite almacenar los archivos en una red permitiendo que los usuarios puedan acceder a ellos como si trabajaran con archivos y directorios locales.
+
+Para ello se hace uso de un servidor que será el que almacene los datos, y serán los clientes los que operen con ellos.
+
